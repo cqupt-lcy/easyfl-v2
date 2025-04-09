@@ -1,0 +1,27 @@
+/* 添加按钮的样式 */
+.addButton {
+  display: inline-block; /* 使按钮可以与其他元素在同一行显示 */
+  padding: 10px 20px; /* 内边距，使按钮看起来更宽敞 */
+  background-color: #ff0800; /* 蓝色背景 */
+  color: #ffffff; /* 白色文字 */
+  border: none; /* 无边框 */
+  border-radius: 5px; /* 圆角 */
+  cursor: pointer; /* 鼠标悬停时显示手型光标 */
+  font-size: 16px; /* 字体大小 */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* 平滑过渡效果 */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* 阴影效果 */
+  width: 100%;
+}
+
+/* 鼠标悬停时的样式 */
+.addButton:hover {
+  background-color: #0056b3; /* 悬停时的背景颜色变深 */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* 悬停时的阴影效果增强 */
+}
+
+/* 按钮按下时的样式 */
+.addButton:active {
+  background-color: #003d82; /* 按下时的背景颜色更深 */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 按下时的阴影效果减弱 */
+  transform: translateY(2px); /* 按下时稍微向下移动 */
+}

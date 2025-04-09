@@ -1,0 +1,16 @@
+.appwrapper{
+  display: flex;
+}
+.dividerwrapper{
+  height: 100vh; /* 使用视口高度 */
+  position: relative; /* 相对定位 */
+  margin-left: 140px;
+}
+.divider {
+  border: 1px solid rgba(211, 211, 216, 0.5);
+  height: 100%; /* 分割线高度占满父容器 */
+  position: absolute; /* 绝对定位 */
+  top: 0; /* 顶部对齐 */
+  left: 50%; /* 水平居中 */
+  transform: translateX(-50%); /* 精确居中 */
+}
