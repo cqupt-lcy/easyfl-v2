@@ -1,0 +1,9 @@
+.itemmenu{
+  background-color: #fff;
+  color: #000;
+  transition: width 0.3s ease-in-out;
+  overflow: hidden;
+  position: fixed;
+  height: 100%;
+  width: 130px;
+}

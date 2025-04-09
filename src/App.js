@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import React from 'react'
+import ItemMenu from './components/ItemMenu'
+import './App.css'
+import Content from './components/Content'
+import routes from './router/router'
+import { useRoutes } from 'react-router-dom'
+import { SocketProvider } from './resource/SocketProvider'
+export default function App() {
+  const routerelement = useRoutes(routes)
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='appwrapper'>
+      <SocketProvider>
+      <ItemMenu/>
+      <div className='dividerwrapper'><span className='divider'></span></div>
+      {routerelement}
+      </SocketProvider>
     </div>
-  );
+  )
 }
-
-export default App;
