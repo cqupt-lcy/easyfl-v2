@@ -114,6 +114,7 @@ export default function Logs() {
     return () => logContainer.removeEventListener('scroll', handleScroll)
   }, [])
 
+  
   useEffect(() => {
     if (isAtBottom && logContainerRef.current) {
       logContainerRef.current.scrollTop = logContainerRef.current.scrollHeight
