@@ -1,8 +1,12 @@
 # “炼丹炉”联邦学习web平台 v2
 
+V3版本:https://github.com/cqupt-lcy/easyfl-web 
+优化了项目结构，重写了状态数据结构
+
 为了⽅便进⾏联邦学习相关的科研实验，我开发了⼀个基于FLGo开源框架（[WwZzz/easyFL: An experimental platform for federated learning.](https://github.com/WwZzz/easyFL)）的web平台，可以进⾏联邦学习训练的控制、实时监测训练过程以及查看实验结果。
 
 ***
+
 “炼丹炉”联邦学习web平台 **v1** [cqupt-lcy/easyfl-react: react+fl](https://github.com/cqupt-lcy/easyfl-react)
 
 ## **Update Logs：**
